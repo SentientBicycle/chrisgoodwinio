@@ -1,1 +1,3 @@
 # chrisgoodwinio
+
+This is a space for me to share my understanding of web development and other technologies that I'm interested in.  If other people are interested and want to fork/clone/debate etc. I'm 100% for that.  Ultimately what this should become is a template for other portfolio sites.  Where developers can easily clone, configure, and consolidate all of their technical work to show off to perspective employers and clients.
