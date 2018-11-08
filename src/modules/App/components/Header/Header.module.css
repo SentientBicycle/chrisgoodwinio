@@ -5,6 +5,7 @@
 }
 
 .content {
+  position: relative;
   width: 100%;
   max-width: 980px;
   margin: auto;
@@ -15,6 +16,14 @@
   font-weight: 300;
   font-size: 32px;
   float: left;
+  margin: 0;
+}
+
+.vert-center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .site-title a {
@@ -30,7 +39,7 @@
 .link a {
   text-decoration: none;
   color: #000;
-  padding: 30px 20px 0 0;
+  padding: 15px 20px 15px 0;
 }
 
 .selected {

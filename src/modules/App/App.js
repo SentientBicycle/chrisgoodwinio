@@ -11,7 +11,7 @@ import { Switch, Route } from 'react-router-dom'
 class App extends Component {
 
   render() {
-    console.log(this.props.children);
+
     return (
       <div className="App">
         <Header/>

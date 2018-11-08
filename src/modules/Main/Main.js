@@ -5,9 +5,9 @@ import style from './Main.module.css';
 class Main extends Component {
   render() {
     return (
-      <div className={style.blog}>
+      <section className={style.main}>
         My information is mainly here.
-      </div>
+      </section>
     );
   }
 }
