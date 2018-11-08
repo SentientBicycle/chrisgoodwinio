@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "429b5fc6a9b02c9c1baa",
-    "url": "/chrisgoodwinio/static/css/main.0d009786.chunk.css"
+    "revision": "92b71b389c4845cac306",
+    "url": "/chrisgoodwinio/static/css/main.ffbb8329.chunk.css"
   },
   {
-    "revision": "429b5fc6a9b02c9c1baa",
-    "url": "/chrisgoodwinio/static/js/main.429b5fc6.chunk.js"
+    "revision": "92b71b389c4845cac306",
+    "url": "/chrisgoodwinio/static/js/main.92b71b38.chunk.js"
   },
   {
     "revision": "b6fd14dacaea5ecaadb4",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/chrisgoodwinio/static/js/runtime~main.686539e4.js"
   },
   {
-    "revision": "77dfa8ad9b55c5ea979b607edb8bf470",
+    "revision": "8273fca7793c9fe0df4537f3bbd172bd",
     "url": "/chrisgoodwinio/index.html"
   }
 ];
