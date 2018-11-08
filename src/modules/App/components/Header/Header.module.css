@@ -1,0 +1,39 @@
+.header {
+  background-color: #eee;
+  background-size: cover;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  overflow: auto;
+}
+
+.site-title {
+  font-weight: 300;
+  font-size: 32px;
+  float: left;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.link {
+  display: inline-flex;
+  float: right;
+}
+
+.link a {
+  text-decoration: none;
+  color: #000;
+  padding: 30px 20px 0 0;
+}
+
+.selected {
+  border-bottom: 1px solid #fff;
+}
+

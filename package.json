@@ -5,8 +5,12 @@
   "homepage": "https://sentientbicycle.github.io/chrisgoodwinio",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "normalize.css": "^8.0.0",
     "react": "^16.6.0",
+    "react-css-modules": "^4.7.7",
     "react-dom": "^16.6.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.0"
   },
   "scripts": {
@@ -27,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "css-loader": "^1.0.1",
     "jest": "^23.6.0"
   }
 }
