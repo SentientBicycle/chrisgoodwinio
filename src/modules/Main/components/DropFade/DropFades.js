@@ -8,10 +8,13 @@ class DropFades extends Component {
 
 
   render (){
-  	const words = ['Hard Working', 'Efficient', 'Focused', 'Energetic', 'Pteradactyl'];
+  	const words = ['Is\u00a0Hard\u00a0Working', 'Is\u00a0Efficient', 'Is\u00a0Focused', 'Is\u00a0Energetic', 'Has\u00a0a\u00a0Pteradactyl', 'Is\u00a0Color\u00a0Blind', 'Can\'t\u00a0Digest\u00a0Lactose' ];
+  	const tagtype = 'h2';
   	return (
-	  	<div className={styles['fade-container']}>
-	  		{words.map( (word, index) => {return <DropFade key={index} place={index} word={word} />})}
+  		<div className={styles['parent-container']}>
+	  		<div className={styles['fade-container']}>
+		  		{words.map( (word, index) => {return <DropFade key={index} place={index} word={word} tagtype={tagtype} />})}
+		  	</div>
 	  	</div>
 	);
   }

@@ -1,9 +1,9 @@
 
 .fader {
-	position: absolute;
 	animation: fade 5s ease-in-out ;
 	animation-fill-mode: forwards; 
 	display: none;
+  text-align: center;
 }
 
 .active {
@@ -12,12 +12,21 @@
 
 .fade-container {
 	position: relative;
-	margin: auto auto 200px auto;
-	width:20%;
+  text-align: center;
+  margin-top: -80px;
+  width:100%;
 }
 
-.holder {
+.first-text {
+  display:inline;
+}
 
+.parent-container {
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 
