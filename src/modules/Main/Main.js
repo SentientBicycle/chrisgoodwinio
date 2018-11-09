@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import style from './Main.module.css';
-
+import DropFades from './components/DropFade/DropFades';
 
 class Main extends Component {
   render() {
     return (
       <section className={style.main}>
-        My information is mainly here.
+        <h1 className={style['title-header']}>Chris Goodwin</h1>
+        <p>Hi, my name is Chris Goodwin and I revel in the all things tech related.</p>
+        <DropFades/>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu. In egestas erat imperdiet sed euismod. Ac turpis egestas maecenas pharetra convallis posuere. Id diam maecenas ultricies mi. Velit aliquet sagittis id consectetur purus ut faucibus. Massa tempor nec feugiat nisl pretium fusce id velit. Libero nunc consequat interdum varius. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Tincidunt augue interdum velit euismod in. Sit amet commodo nulla facilisi nullam. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu. In egestas erat imperdiet sed euismod. Ac turpis egestas maecenas pharetra convallis posuere. Id diam maecenas ultricies mi. Velit aliquet sagittis id consectetur purus ut faucibus. Massa tempor nec feugiat nisl pretium fusce id velit. Libero nunc consequat interdum varius. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Tincidunt augue interdum velit euismod in. Sit amet commodo nulla facilisi nullam. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu. In egestas erat imperdiet sed euismod. Ac turpis egestas maecenas pharetra convallis posuere. Id diam maecenas ultricies mi. Velit aliquet sagittis id consectetur purus ut faucibus. Massa tempor nec feugiat nisl pretium fusce id velit. Libero nunc consequat interdum varius. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Tincidunt augue interdum velit euismod in. Sit amet commodo nulla facilisi nullam. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu. In egestas erat imperdiet sed euismod. Ac turpis egestas maecenas pharetra convallis posuere. Id diam maecenas ultricies mi. Velit aliquet sagittis id consectetur purus ut faucibus. Massa tempor nec feugiat nisl pretium fusce id velit. Libero nunc consequat interdum varius. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Tincidunt augue interdum velit euismod in. Sit amet commodo nulla facilisi nullam. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc. Neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu. In egestas erat imperdiet sed euismod. Ac turpis egestas maecenas pharetra convallis posuere. Id diam maecenas ultricies mi. Velit aliquet sagittis id consectetur purus ut faucibus. Massa tempor nec feugiat nisl pretium fusce id velit. Libero nunc consequat interdum varius. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Tincidunt augue interdum velit euismod in. Sit amet commodo nulla facilisi nullam. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
       </section>
     );
   }

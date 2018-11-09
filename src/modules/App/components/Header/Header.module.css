@@ -1,7 +1,14 @@
 .header {
-  background-color: #eee;
+  background-color: rgba(237, 237, 237, 0.75);
   background-size: cover;
   border-bottom: 1px solid #ccc;
+}
+
+.cg-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
 }
 
 .content {

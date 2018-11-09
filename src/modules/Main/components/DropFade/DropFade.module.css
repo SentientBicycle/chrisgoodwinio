@@ -1,0 +1,34 @@
+
+.fader {
+	position: absolute;
+	animation: fade 5s ease-in-out ;
+	animation-fill-mode: forwards; 
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.fade-container {
+	position: relative;
+	margin: auto auto 200px auto;
+	width:20%;
+}
+
+.holder {
+
+}
+
+
+@keyframes fade{
+  0% {color: rgba(0,0,0,0);
+  	transform: translate(0);
+  }
+  50% {color: rgba(0,0,0,1);
+  	transform: translate(0, 50px);
+  }
+  100% {color: rgba(0,0,0,0);
+  	transform: translate(0, 50px);
+  }
+}

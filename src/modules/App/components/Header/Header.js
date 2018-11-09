@@ -9,7 +9,7 @@ export function Header(props, context) {
 	const siteTitleCss = cssConcat(styles['vert-center'], styles['site-title']);
 	const siteLinksCss = cssConcat(styles.link);
   return (
-  	<nav>
+  	<nav className={styles['cg-nav']}>
 	    <div className={styles.header}>
 	      <div className={styles.content}>
 	        <h1 className={siteTitleCss}>
