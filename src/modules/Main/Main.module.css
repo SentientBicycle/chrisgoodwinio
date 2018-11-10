@@ -11,5 +11,14 @@
 
 .h2 {
 	float: left;
+
+	color: white;
 }
 
+
+.figure {
+	margin: 0;
+}
+.image {
+	width: 100%;
+}
