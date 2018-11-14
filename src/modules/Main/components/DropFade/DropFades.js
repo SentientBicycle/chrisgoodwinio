@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './DropFade.module.css';
-import DropFade from './DropFade.js'
+import DropFade from './DropFade'
 
 class DropFades extends Component {
 

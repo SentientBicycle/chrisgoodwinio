@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import { cssConcat } from '../../../../utils/css-concat';
+import { CssConcat } from '../../../../utils/CssConcat';
 
 export function Header(props, context) {
 
-	const siteTitleCss = cssConcat(styles['vert-center'], styles['site-title']);
-	const siteLinksCss = cssConcat(styles.link);
+	const siteTitleCss = CssConcat(styles['vert-center'], styles['site-title']);
+	const siteLinksCss = CssConcat(styles.link);
   return (
   	<nav className={styles['cg-nav']}>
 	    <div className={styles.header}>

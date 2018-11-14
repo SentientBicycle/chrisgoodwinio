@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
@@ -31,7 +31,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.1",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
   }
 }
