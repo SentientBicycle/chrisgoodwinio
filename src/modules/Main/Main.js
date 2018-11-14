@@ -14,7 +14,7 @@ class Main extends Component {
       </section>
       <section>
       <figure className={style.figure}>
-      		<img className={style.image} src={HeaderImage} />
+      		<img className={style.image} src={HeaderImage} alt=""/>
       	</figure>
       </section>
       </React.Fragment>
