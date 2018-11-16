@@ -2,25 +2,20 @@ import React, { Component } from 'react';
 import styles from './DropFade.module.css';
 
 class DropFade extends Component {
+	state = {
+		active: this.props.active,
+		place: 0,
+	}
 
 	componentDidMount() {
-		this.df.addEventListener('animationend', this.setNextActive);
+		this.df.addEventListener('animationend', this.props.setNextActive);
+		this.setState(() => {if(this.props.place === 0)return { active: true}})
 	}
 
-	/*  Not especially fond of this implmentation
-	 *  however it gets the job done no matter how many
-	 *  dropefades are created.  Once redux is put in
-	 *  I may change it so there is a reference to each
-	 *  element in the props.
-	*/
-	setNextActive(e) {
-		e.target.classList.remove(styles.active);
-		if(e.target.nextSibling){
-			e.target.nextSibling.classList.add(styles.active);
-		} else {
-			e.target.parentNode.firstChild.classList.add(styles.active);
-		}
+	componentWillReceiveProps(newProps) {
+		this.setState({active: newProps.active});
 	}
+	
 
   render (){
   	const CustomTag = `${this.props.tagtype}`;
@@ -32,7 +27,7 @@ class DropFade extends Component {
 		  *  word: the actual content of the tag.
 		  *  reg:  This is a reference callback to add the animationend event listener.
   		  */
-	  	<CustomTag  ref={elem=> this.df = elem} className={`${styles.fader} ${this.props.place === 0 ? styles.active : ''}`} place={this.props.place} >{`${this.props.word}`}</CustomTag>
+	  	<CustomTag  ref={elem=> this.df = elem} className={`${styles.fader} ${this.state.active === true ? styles.active : ''}`} place={this.props.place} >{`${this.props.word}`}</CustomTag>
   	
 	);
   }
