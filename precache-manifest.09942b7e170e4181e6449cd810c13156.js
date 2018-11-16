@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1a416e2495de23064778",
+    "revision": "67bcf34bdc728c7f7dcd",
     "url": "/chrisgoodwinio/static/css/main.b4ec5d1e.chunk.css"
   },
   {
-    "revision": "1a416e2495de23064778",
-    "url": "/chrisgoodwinio/static/js/main.1a416e24.chunk.js"
+    "revision": "67bcf34bdc728c7f7dcd",
+    "url": "/chrisgoodwinio/static/js/main.67bcf34b.chunk.js"
   },
   {
     "revision": "851023fa7fbb271e76be",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/chrisgoodwinio/static/media/my-life-through-a-lens-110632-unsplash.bcbb4554.jpg"
   },
   {
-    "revision": "35fa2fcd179a92d99fad8036514475db",
+    "revision": "6d0eef1b5ed3ed7204595adfc91f7d04",
     "url": "/chrisgoodwinio/index.html"
   }
 ];
