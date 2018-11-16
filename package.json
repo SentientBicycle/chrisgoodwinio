@@ -2,7 +2,7 @@
   "name": "chrisgoodwinio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sentientbicycle.github.io/chrisgoodwinio",
+  "homepage": "https://sentientbicycle.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "normalize.css": "^8.0.0",
