@@ -12,15 +12,16 @@ class DropFades extends Component {
       { word:'Is\u00a0Energetic', active:false },
       { word:'Has\u00a0a\u00a0Pteradactyl', active:false },
     ],
-    active:0,
+    activeIndex:0,
   }
+
   setNextActive = () => {
-    const currentActive =  this.state.active;
-    const nextActive = currentActive >= this.state.words.length - 1 ? 0 : currentActive + 1; 
+    const currentActiveIndex =  this.state.activeIndex;
+    const nextActiveIndex = currentActiveIndex >= this.state.words.length - 1 ? 0 : currentActiveIndex + 1; 
     const newState = {...this.state};
-    newState.words[nextActive].active = true;
-    newState.words[currentActive].active = false;
-    newState.active = nextActive;
+    newState.words[nextActiveIndex].active = true;
+    newState.words[currentActiveIndex].active = false;
+    newState.activeIndex = nextActiveIndex;
     this.setState(newState);
   }
 
