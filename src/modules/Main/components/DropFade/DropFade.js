@@ -18,7 +18,11 @@ class DropFade extends Component {
 		  *  word: the actual content of the tag.
 		  *  reg:  This is a reference callback to add the animationend event listener.
   		  */
-	  	<CustomTag  ref={elem=> this.df = elem} className={`${styles.fader} ${this.props.active === true ? styles.active : ''}`} place={this.props.place} >{`${this.props.word}`}</CustomTag>
+	  	<CustomTag  
+	  		ref={elem=> this.df = elem} 
+	  		className={`${styles.fader} ${this.props.active === true ? styles.active : ''}`} >
+	  		{`${this.props.word}`}
+  		</CustomTag>
   	
 	);
   }

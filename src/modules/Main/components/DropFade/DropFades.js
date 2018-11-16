@@ -6,19 +6,21 @@ import DropFade from './DropFade'
 class DropFades extends Component {
   state = {
     words: [
-      { id:0, word:'Is\u00a0Hard\u00a0Working', active:true },
-      { id:1, word:'Is\u00a0Efficient', active:false },
-      { id:2, word:'Is\u00a0Focused', active:false },
-      { id:3, word:'Is\u00a0Energetic', active:false },
-      { id:4, word:'Has\u00a0a\u00a0Pteradactyl', active:false },
-    ]
+      { word:'Is\u00a0Hard\u00a0Working', active:true },
+      { word:'Is\u00a0Efficient', active:false },
+      { word:'Is\u00a0Focused', active:false },
+      { word:'Is\u00a0Energetic', active:false },
+      { word:'Has\u00a0a\u00a0Pteradactyl', active:false },
+    ],
+    active:0,
   }
-  setNextActive = (e) => {
-    const fadeId =  parseInt(e.originalTarget.getAttribute('place'));
-    const nextTarget = fadeId >= this.state.words.length - 1 ? 0 : fadeId + 1; 
+  setNextActive = () => {
+    const currentActive =  this.state.active;
+    const nextActive = currentActive >= this.state.words.length - 1 ? 0 : currentActive + 1; 
     const newState = {...this.state};
-    newState.words[nextTarget].active = true;
-    newState.words[fadeId].active = false;
+    newState.words[nextActive].active = true;
+    newState.words[currentActive].active = false;
+    newState.active = nextActive;
     this.setState(newState);
   }
 
@@ -27,7 +29,7 @@ class DropFades extends Component {
   	return (
   		<div className={styles['parent-container']}>
 	  		<div className={styles['fade-container']}>
-		  		{this.state.words.map( (word, index) => {return <DropFade key={word.id} place={word.id} word={word.word} tagtype={tagtype} active={word.active} setNextActive={this.setNextActive} />})}
+		  		{this.state.words.map( (word, index) => {return <DropFade key={index} word={word.word} tagtype={tagtype} active={word.active} setNextActive={this.setNextActive} />})}
 		  	</div>
 	  	</div>
 	);
