@@ -21,6 +21,7 @@ const Root = ({store}) => (
   <Provider store={store}>
   <Router>
     <Route path="/" component={App}>
+    <Route path="/chrisgoodwinio" component={App}>
     </Route>
   </Router>
 )
