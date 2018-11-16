@@ -1,5 +1,9 @@
-.main {
+.main-section {
   text-align: center;
+}
+
+.section {
+	margin: 100px 0 100px 0;
 }
 
 .title-header {
@@ -21,4 +25,9 @@
 }
 .image {
 	width: 100%;
+}
+
+.hero-copy {
+	margin: 50px auto 0 auto;
+	width: 80%;
 }

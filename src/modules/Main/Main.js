@@ -7,10 +7,10 @@ class Main extends Component {
   render() {
     return (
     	<React.Fragment>
-      <section className={style.main}>
+      <section className={style['main-section']}>
         <h1 className={style['title-header']}>Chris Goodwin</h1>
         <DropFades/>
-      	<p>Hello and welcome to my humble website.  I made everything you see before you from scratch.</p>
+      	<p className={style['hero-copy']}>Hello and welcome to my humble website.  I made everything you see before you from scratch.</p>
       </section>
       <section>
       <figure className={style.figure}>
